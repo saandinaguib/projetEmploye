@@ -8,3 +8,5 @@ Route::get('/', function () {
 use App\Http\Controllers\EmployeController;
 
 Route::get('/listerEmployes', [EmployeController::class, 'listEmployes']);
+
+Route::get('/ajouterEmployes', [EmployeController::class, 'addEmploye']);
