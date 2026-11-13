@@ -56,6 +56,13 @@
             </div>
 
             <div class="form-group">
+                <label class="col-md-3">Message : </label>
+                <div class="col-md-6">
+                    <textarea name="msg" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
                 <div class="col-md-12 col-md-offset-3">
                     <button type="submit" class="btn btn-primary">
                         Valider

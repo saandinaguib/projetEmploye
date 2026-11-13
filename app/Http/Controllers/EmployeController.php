@@ -25,7 +25,7 @@ class EmployeController extends Controller
     public function validEmploye(Request $request)
     {
         $employe = new Employe();
-        $employe->civilite = $request->input('civil');
+        $employe->civilite = $request->input('civi');
         $employe->prenom = $request->input('prenom');
         $employe->nom = $request->input('nom');
         $employe->pwd = password_hash($request->input('mdp'), PASSWORD_DEFAULT);
