@@ -25,6 +25,8 @@ class EmployeController extends Controller
     public function validEmploye(Request $request)
     {
         $employe = new Employe();
-
+        $employe->nom = $request->input('nom');
+        $employe->prenom = $request->input('prenom');
+        $employe->profil = $request->input('profil');
     }
 }
