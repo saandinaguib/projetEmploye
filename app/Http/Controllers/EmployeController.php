@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Employe;
 use App\Services\EmployeService;
 use Illuminate\Http\Request;
 
@@ -19,5 +20,11 @@ class EmployeController extends Controller
     public function addEmploye()
     {
         return view('formEmploye');
+    }
+
+    public function validEmploye(Request $request)
+    {
+        $employe = new Employe();
+
     }
 }

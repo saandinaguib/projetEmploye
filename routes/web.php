@@ -10,3 +10,5 @@ use App\Http\Controllers\EmployeController;
 Route::get('/listerEmployes', [EmployeController::class, 'listEmployes']);
 
 Route::get('/ajouterEmploye', [EmployeController::class, 'addEmploye']);
+
+Route::post('/validerEmploye', [EmployeController::class, 'validEmploye']);
