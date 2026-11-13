@@ -12,3 +12,5 @@ Route::get('/listerEmployes', [EmployeController::class, 'listEmployes']);
 Route::get('/ajouterEmploye', [EmployeController::class, 'addEmploye']);
 
 Route::post('/validerEmploye', [EmployeController::class, 'validEmploye']);
+
+Route::get('/editerEmploye/{id}', [EmployeController::class, 'editEmploye']);

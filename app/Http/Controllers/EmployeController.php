@@ -38,4 +38,11 @@ class EmployeController extends Controller
 
         return view('home');
     }
+
+    public function editEmploye($id)
+    {
+        $service = new EmployeService();
+        $employe = $service->getEmploye($id);
+        return view('formEmploye', compact('employe'));
+    }
 }
